@@ -7,6 +7,7 @@
 # 传递方法
 bat脚本
 ----------
+
 @echo off
 setlocal
 
@@ -15,7 +16,7 @@ set USERNAME=zzz
 set PASSWORD=123456
 set WEBDAV_URL=http://192.168.31.152:5244/dav
 set LOCAL_FOLDER_PATH=D:\pytestaaa\kmi
-set TOKEN=SCT228306TA-ftvYRo6CbuwlvUmntaCzKTAu
+set TOKEN = SCT228306TA-ftvYRo6Cb
 
 :: 检查命令行参数，并覆盖默认值
 if "%~1" neq "" set USERNAME=%~1
@@ -28,4 +29,5 @@ if "%~5" neq "" set TOKEN=%~5
 start your_script.exe --username "%USERNAME%" --password "%PASSWORD%" --webdav_url "%WEBDAV_URL%" --local_folder_path "%LOCAL_FOLDER_PATH%" --token "%TOKEN%"
 
 endlocal
+
 ----------
